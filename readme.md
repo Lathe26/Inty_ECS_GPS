@@ -9,7 +9,7 @@ The required hardware for this set is:
 - An Intellivision cartridge that contains the Inty_ECS_GPS program
 - Cable that adapts ECS AUX to serial (Tx/Rx version)
 
-A video demonstrating Inty ECS GPS is available at ![https://www.youtube.com/watch?v=_8zZaOlPb58](https://www.youtube.com/watch?v=_8zZaOlPb58)
+A video demonstrating Inty ECS GPS is available at [https://www.youtube.com/watch?v=_8zZaOlPb58](https://www.youtube.com/watch?v=_8zZaOlPb58)
 
 Example screenshot:
 
@@ -41,8 +41,8 @@ This program can be compiled in one of two modes:
 For hardware mode, edit the \*.bas file and set `CONST UART_SIMULATION = 0`.  For test mode, set `CONST UART_SIMULATION = 1`
 
 The 2 main tools are necessary to build are the ***IntyBASIC*** tools (tested with version 1.4.0) at the ***jzIntv*** tools (tested with version zintv-20181225-win32).  Newer versions are expected to be compatible, but not confirmed.
-- IntyBASIC can be downloaded from ![https://nanochess.org/intybasic.html](https://nanochess.org/intybasic.html).
-- jzIntv can be downloaded from ![http://spatula-city.org/~im14u2c/intv/](http://spatula-city.org/~im14u2c/intv/).
+- IntyBASIC can be downloaded from [https://nanochess.org/intybasic.html](https://nanochess.org/intybasic.html).
+- jzIntv can be downloaded from [http://spatula-city.org/~im14u2c/intv/](http://spatula-city.org/~im14u2c/intv/).
 
 To build Inty_ECS_GPS.rom (and \*.bin and \*.cfg), use the following Bash script.  Edit the paths at the top to match your local tool installation path and versions.
 ```
