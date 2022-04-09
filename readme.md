@@ -9,10 +9,11 @@ The required hardware for this set is:
 - An Intellivision cartridge that contains the Inty_ECS_GPS program
 - Cable that adapts ECS AUX to serial (Tx/Rx version)
 
-A video demonstrating Inty ECS GPS is available at !(https://www.youtube.com/watch?v=_8zZaOlPb58)
+A video demonstrating Inty ECS GPS is available at ![https://www.youtube.com/watch?v=_8zZaOlPb58](https://www.youtube.com/watch?v=_8zZaOlPb58)
 
 Example screenshot:
-!(/shot0002.gif)
+
+![screenshot of Inty ECS GPS executing](/shot0002.gif)
 
 # Cable that adapts ECS AUX to serial (Tx/Rx version)
 The wiring from the ECS's AUX plug (uses a 3.5mm audio plug) to a standard DE-9 serial connector is:
@@ -30,18 +31,18 @@ This project grew out of my studying of the ECS's UART registers, which were poo
 
 # Code and Build instructions
 Inty_ECS_GPS.bas is the source code for this program.  This program was written as a quick demo program.  Thus:
-- The source code quality is **prototype grade** in that it is _not_ professionally constructed nor fully commented.
+- The source code quality is **_prototype grade_** in that it is _not_ professionally constructed nor fully commented.
 - Some features mentioned or stubbed out in the source code were _not_ implemented in the end.  These include supporting other GPS protocols, supporting timezones, supporting imperial units, etc.
 - It was written using both IntyBASIC (a modern _compiled_, non-interpreted BASIC for the Intellivision) and in CP1610 assembly code for some optimizations.
 
 This program can be compiled in one of two modes:
 - Operates with real GPS hardware that outputs Garmin TextOut serial data
 - Operates in test mode that uses cycles through a list of canned Garmin TextOut data.  No GPS hardware necessary.
-For hardware mode, set `CONST UART_SIMULATION = 0`.  For test mode, set `CONST UART_SIMULATION = 1`
+For hardware mode, edit the \*.bas file and set `CONST UART_SIMULATION = 0`.  For test mode, set `CONST UART_SIMULATION = 1`
 
-Two main tools are necessary to build are the IntyBASIC tools (tested with version 1.4.0) at the jzIntv tools (tested with version zintv-20181225-win32).  Newer versions are expected to be compatible, but not confirmed.
-- IntyBASIC can be downloaded from !(https://nanochess.org/intybasic.html).
-- jzIntv can be downloaded from !(http://spatula-city.org/~im14u2c/intv/).
+The 2 main tools are necessary to build are the ***IntyBASIC*** tools (tested with version 1.4.0) at the ***jzIntv*** tools (tested with version zintv-20181225-win32).  Newer versions are expected to be compatible, but not confirmed.
+- IntyBASIC can be downloaded from ![https://nanochess.org/intybasic.html](https://nanochess.org/intybasic.html).
+- jzIntv can be downloaded from ![http://spatula-city.org/~im14u2c/intv/](http://spatula-city.org/~im14u2c/intv/).
 
 To build Inty_ECS_GPS.rom (and \*.bin and \*.cfg), use the following Bash script.  Edit the paths at the top to match your local tool installation path and versions.
 ```
